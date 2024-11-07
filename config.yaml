@@ -1,25 +1,41 @@
-sap:
-  control_bits:
-    - AI
-    - A0
-    - BI
-    - BO
-    - AL0
-    - ADD
-    - SUB
-    - II
-    - MI
-    - RI
-    - RO
-    - CE
-    - JMP
-    - CO
-    - OI
-    - I0
 
-  
-  instructions:
-    LDA:
-      addr: "0000"
+control_bits:
+  - AI
+  - AO
+  - BI
+  - BO
+  - ALO
+  - ADD
+  - SUB
+  - II
+  - MI
+  - RI
+  - RO
+  - CE
+  - JMP
+  - CO
+  - OI
+  - I0
+
+
+instructions:
+  LDA:
+    addr: 0
+    steps:
+      - [MI, IO]
+      - [MO, AI]
+
+  ADD:
+    addr: 1
+    steps:
+      - [MI, IO]
+      - [MO, BI]
+      - [ADD, ALO, AI]
+
+  OUT:
+    addr: 2
+    steps:
+      - [AO, OI]
+
 
 
