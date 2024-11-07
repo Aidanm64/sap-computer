@@ -1,0 +1,25 @@
+sap:
+  control_bits:
+    - AI
+    - A0
+    - BI
+    - BO
+    - AL0
+    - ADD
+    - SUB
+    - II
+    - MI
+    - RI
+    - RO
+    - CE
+    - JMP
+    - CO
+    - OI
+    - I0
+
+  
+  instructions:
+    LDA:
+      addr: "0000"
+
+
