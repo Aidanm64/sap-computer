@@ -23,7 +23,7 @@ for key, inst in cfg['instructions'].items():
 		print(address)
 		print("{:016b}".format(command), "{:06x}".format(command), command)
 
-		rom[address+1] = command
+		rom[address+1] = command # th +1 is because my fetch instructions bleed into the ROM instructions
 
 with open("f.bin", "w") as f:
 	o = ""

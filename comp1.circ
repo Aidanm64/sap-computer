@@ -539,6 +539,7 @@
       <a name="appearance" val="logisim_evolution"/>
       <a name="asyncread" val="true"/>
       <a name="clearpin" val="true"/>
+      <a name="label" val="RAM_1"/>
       <a name="type" val="nonvolatile"/>
     </comp>
     <comp lib="4" loc="(1630,920)" name="Register">
@@ -1057,7 +1058,7 @@
       <a name="appearance" val="classic"/>
       <a name="contents">addr/data: 7 24
 0 8100 401 6*0 8100 404 31 5*0
-4002
+4002 7*0 8100 202
 </a>
       <a name="dataWidth" val="24"/>
     </comp>

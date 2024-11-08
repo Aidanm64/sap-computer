@@ -1,0 +1,8 @@
+set 06 1
+set 07 2
+
+LDA 06
+ADD 07
+STA 08
+LDA 08
+OUT

@@ -37,5 +37,11 @@ instructions:
     steps:
       - [AO, OI]
 
+  STA:
+    addr: 3
+    steps:
+      - [MI, IO]
+      - [RI, AO]
+
 
 
