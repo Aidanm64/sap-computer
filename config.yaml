@@ -15,7 +15,7 @@ control_bits:
   - JMP
   - CO
   - OI
-  - I0
+  - IO
 
 
 instructions:
@@ -23,13 +23,13 @@ instructions:
     addr: 0
     steps:
       - [MI, IO]
-      - [MO, AI]
+      - [RO, AI]
 
   ADD:
     addr: 1
     steps:
       - [MI, IO]
-      - [MO, BI]
+      - [RO, BI]
       - [ADD, ALO, AI]
 
   OUT:
